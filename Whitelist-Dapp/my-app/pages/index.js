@@ -17,9 +17,7 @@ export default function Home() {
   // Create a reference to the Web3 Modal (used for connecting to Metamask) which persists as long as the page is open
   const web3ModalRef = useRef();
 
-  
-   * @param {*} needSigner - True if you need the signer, default false otherwise
-   */
+
   const getProviderOrSigner = async (needSigner = false) => {
     // Connect to Metamask
     // Since we store `web3Modal` as a reference, we need to access the `current` value to get access to the underlying object
